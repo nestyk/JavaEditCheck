@@ -31,6 +31,8 @@ def JavaEditCheck():
     versione = "" 
     fakeversion = "0ptiFine"
     filename = input("Enter the jar(version) with his path: ")
+    if '"' in filename:
+        filename = filename[1:-1]
     sha256_hash = hashlib.sha256()
 
     for line in lines:
