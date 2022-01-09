@@ -49,8 +49,8 @@ def JavaEditCheck():
         print("Legit")
     else:
         print("Java Edit Found.")
-        print(f"Version Current using has this hash: {sha256versione.strip()}")
-        print(f"Legit Version has this hash: {sha256_hash.hexdigest()}")
+        print(f"Version Current using has this hash: {sha256_hash.hexdigest()}")
+        print(f"Legit Version has this hash: {sha256versione.strip()}")
 
 
 JavaEditCheck()
